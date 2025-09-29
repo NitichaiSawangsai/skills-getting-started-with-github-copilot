@@ -74,72 +74,37 @@ section h3 {
   margin-bottom: 8px;
 }
 
-/* Participants section inside activity cards */
-.activity-card .participants {
-  margin-top: 12px;
-  padding: 12px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(250,250,250,0.9));
-  border-top: 1px solid #e6e6e6;
-  border-radius: 6px;
+.participants {
+  margin-top: 10px;
 }
 
-.activity-card .participants h5 {
-  margin: 0 0 8px 0;
-  font-size: 14px;
+.participants h5 {
+  margin-bottom: 10px;
+  font-size: 18px;
   color: #1a237e;
-  font-weight: 600;
+}
+
+.participants ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.participants li {
   display: flex;
   align-items: center;
-  gap: 8px;
+  margin-bottom: 8px;
 }
 
-/* Compact, pretty bulleted list */
-.activity-card .participants ul {
-  list-style: disc;
-  padding-left: 20px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-/* Each participant item with an optional initial badge */
-.activity-card .participants li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 14px;
-  color: #333;
-}
-
-/* Circular initial badge */
-.activity-card .participants .initial {
-  width: 28px;
-  height: 28px;
+.participants .initial {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
   border-radius: 50%;
-  background: #1a237e;
-  color: #fff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
-  font-weight: 700;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
-}
-
-/* Fallback for long names: truncate */
-.activity-card .participants .name {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* Slightly muted when no participants */
-.activity-card .participants.empty {
-  background: #fff6f6;
-  border: 1px dashed #f2b8b8;
-  color: #c62828;
-  padding: 10px;
+  background-color: #1a237e;
+  color: white;
+  text-align: center;
+  margin-right: 10px;
 }
 
 .form-group {
